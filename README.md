@@ -23,6 +23,17 @@ In order to run this code, you will need to install the httprequest that can be 
 
 npm install w3c-xmlhttprequest
 
+
+Download in a folder the files 
+ -package.json
+ -package-lock.json
+ -cucumber.js 
+ and the folder : 
+ features/step_definitions 
+ 
+Open in visual studio code the folder in the files and the folder have been downloaded
+
+
 The test can be executed with the following command in the visual studio code terminal: 
 
  npm test
