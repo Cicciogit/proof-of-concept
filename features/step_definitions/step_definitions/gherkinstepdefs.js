@@ -290,25 +290,26 @@ Then('The user should notice an {string} box and a submit {string}', async funct
 
 
 
-///some try to get the REQ-UI-12 
+///some try to get the REQ-UI-12  - 
+// there are the problems I have encountered 
 // the Scenario Outline did not convert the variable into angle brackets <>
 
-When(/^I enter "(.*)" as invalid username$/, function ( goat ) {
-  console.log("display Parameter passed : " + goat );
-});
+//When(/^I enter "(.*)" as invalid username$/, function ( goat ) {
+ // console.log("display Parameter passed : " + goat );
+//});
 
-When(/^The User enters "(.*)" in the input field$/, function (value) {
-  console.log("display Parameter passed : " + value );
-  return 'pending';
-});
+//When(/^The User enters "(.*)" in the input field$/, function (value) {
+ // console.log("display Parameter passed : " + value );
+ // return 'pending';
+//});
 
 
-var test = await driver.findElement(By.id('hello-input')).sendKeys('John');
-    await driver.findElement(By.id('hello-submit')).click()
-    var inputs =  await driver.findElement(By.tagName("hello-text"));
-    var inputs_html = inputs.getAttribute ('innerText');
-    assert.equal(inputs_html,'Hello John!');
-    driver.get('http://uitest.duodecadits.com/form.html');
+//var test = await driver.findElement(By.id('hello-input')).sendKeys('John');
+   // await driver.findElement(By.id('hello-submit')).click()
+   // var inputs =  await driver.findElement(By.tagName("hello-text"));
+   // var inputs_html = inputs.getAttribute ('innerText');
+   // assert.equal(inputs_html,'Hello John!');
+   // driver.get('http://uitest.duodecadits.com/form.html');
 
 
 
